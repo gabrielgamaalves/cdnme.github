@@ -1,8 +1,9 @@
-<img src="https://cdn.jsdelivr.net/gh/gabrielgamaalves/cdn.github@main/angledb/logo-repo.png" align="right" width="220px">
+<img src="https://cdn.jsdelivr.net/gh/gabrielgamaalves/cdnme.github@main/angledb/logorepo.png" align="right" width="220px">
 
 # Angledb
 ![npm](https://img.shields.io/npm/v/trydb.ts?color=%23e02b2b&style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/gabrielgamaalves/angledb?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/gabrielgamaalves/angledb?style=for-the-badge) 
+<code><img height="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="Nodejs"/></code>
 
 > Biblioteca de Nodejs, voltada para a criação e edição simples de um banco de dados JSON.
 
@@ -25,7 +26,7 @@ const db = angledb("./database.json") // passe o local do arquivo.json + configu
 > ```
 
 ## Métodos
-> O **Angledb** usa o sistema CRUD (Create, Read, Update, Delete).
+> O **Angledb** usa o CRUD (Create, Read, Update, Delete) que é um acrônimo para as maneiras de se operar em informação armazenada.
 
 ### Create
 Use o create() para criar um objeto e inserir no _database_ estabelecido.
@@ -110,7 +111,7 @@ Use o delete() para deletar um item presente no _database_.
 Ao passar objetos Javascript ou JSON grandes (~ 10-100 MB), talvez ocorrerá problemas no desempenho do seu projeto, voltado ao **angledb**.
 
 #### **Por que?**
-O angledb funciona apartir da função _writeFile_, que usa o JSON.stringfy e o JSON.parse. Com isso pode demorar para processar tais dados. 
+O angledb funciona apartir da função _writeFile_, que usa o JSON.stringify e o JSON.parse. Com isso pode demorar para processar tais dados. 
 Tendo em vista esses processos você pode optar por separar determinados _databases_, ou recorrer a outros metodos de _database_.
 
 ```js
@@ -125,3 +126,5 @@ db.users.read() // Exemplo de uso.
 
 ---------
 
+## Licença
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes
